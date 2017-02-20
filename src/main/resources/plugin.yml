@@ -1,0 +1,12 @@
+main: com.rayzr522.dlannouncer.DLAnnouncer
+name: DLAnnouncer
+version: 1.0.0
+description: An announcement plugin for DoomLand Network.
+author: Rayzr
+#depend: [CreativelyNamedLib]
+#commands:
+#  dlannouncer:
+#    description: DLAnnouncer main command
+#    aliases: [alias1,alias2]
+#    usage: "/dlannouncer [command]"
+#    permission: DLAnnouncer.main
