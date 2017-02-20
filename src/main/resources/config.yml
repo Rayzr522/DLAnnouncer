@@ -1,0 +1,31 @@
+# All the plugin messages. Fully configurable with color codes.
+message:
+  usage:
+  - "&aUsage for &bDLAnnouncer:"
+  - "&7/announcer add <message>"
+  - "&7/announcer say <message>"
+  - "&7/announcer prefix <newPrefix>"
+  - "&7/announcer suffix <newSuffix>"
+  - "&7/announcer reload"
+  no-permission: "&cYou need the permission 'DLAnnouncer.admin' to use this!"
+  added-message: "&aYour &bmessage&a has been &badded"
+  set-prefix: "&aThe new &bprefix&a has been &bset"
+  set-suffix: "&aThe new &bsuffix&a has been &bset"
+  reloaded: "&aThe &bconfig&a has been &breloaded"
+
+# The prefix to display before broadcasts
+prefix: "&8&m----------------------------------------"
+# The prefix to display after broadcasts
+suffix: "&8&m----------------------------------------"
+
+# The delay in ticks of how often the plugin broadcasts a message (default: 6000, equal to 5 minutes)
+delay: 6000
+
+# How many characters should the messages wrap at? (default: 50)
+line-wrap: 50
+
+# All the broadcasts that the plugin can say
+broadcasts:
+- "&aWe're currently looking for &bstaff!&a Go to &bwww.myserver.com&a to apply!"
+- "&aDo &b/warp shop&a for amazing deals!"
+- "&aThis is an example of a really really really long message blah blah blah this will get wrapped at the &bconfigured number of characters" 
