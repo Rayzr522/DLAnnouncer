@@ -5,15 +5,23 @@ Announces messages to the entire server with a configurable prefix/suffix.
 
 ###### [Click here to download](https://github.com/Rayzr522/DLAnnouncer/releases)
 
-## Commands
+## Commands  
+
+### `/announcer add <message>`
+Permission: `DLAnnouncer.admin`  
+Description: Adds a message to the list of broadcasts
+
+### `/announcer add <number>`
+Permission: `DLAnnouncer.admin`  
+Description: Removes a message from the list of broadcasts with the given number  
+
+### `/announcer list`
+Permission: `DLAnnouncer.admin`  
+Description: Lists all possible broadcast messages  
 
 ### `/announcer say <message>`
 Permission: `DLAnnouncer.admin`  
 Description: Broadcasts a message  
-
-### `/announcer add <message>`
-Permission: `DLAnnouncer.admin`  
-Description: Adds a message to the list of broadcasts  
 
 ### `/announcer prefix <newPrefix>`
 Permission: `DLAnnouncer.admin`  

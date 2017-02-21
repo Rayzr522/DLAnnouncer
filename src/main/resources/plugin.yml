@@ -1,6 +1,6 @@
 main: com.rayzr522.dlannouncer.DLAnnouncer
 name: DLAnnouncer
-version: 1.0.0
+version: 1.0.1
 description: An announcement plugin for DoomLand Network.
 author: Rayzr
 commands:

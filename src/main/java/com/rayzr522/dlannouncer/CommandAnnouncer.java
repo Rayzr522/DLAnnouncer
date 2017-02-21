@@ -65,6 +65,38 @@ public class CommandAnnouncer implements CommandExecutor {
             plugin.reload();
             tell(sender, "reloaded");
 
+        } else if (sub.equals("list")) {
+
+            List<String> broadcasts = plugin.getBroadcasts();
+            for (int i = 0; i < broadcasts.size(); i++) {
+                sender.sendMessage(String.format("%s%d. '%s'", ChatColor.YELLOW, i + 1, broadcasts.get(i)));
+            }
+
+        } else if (sub.equals("remove")) {
+
+            if (args.length < 2) {
+                tell(sender, "usage");
+                return true;
+            }
+
+            int index = 0;
+            try {
+                index = Integer.parseInt(args[1]) - 1;
+            } catch (NumberFormatException e) {
+                tell(sender, "not-number");
+                return true;
+            }
+
+            List<String> broadcasts = plugin.getBroadcasts();
+            if (index < 0 || index >= broadcasts.size()) {
+                tell(sender, "invalid-index");
+                return true;
+            }
+            
+            broadcasts.remove(index);
+            plugin.set("broadcasts", broadcasts);
+            tell(sender, "removed-message");
+
         } else {
 
             tell(sender, "usage");
